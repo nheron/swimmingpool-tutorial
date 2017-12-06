@@ -16,6 +16,6 @@
 package org.training.leisure.swimmingpool;
 
 
-public enum PriceType {
+public enum PriceType implements java.io.Serializable{
     definitive, promotion, reduction
 }

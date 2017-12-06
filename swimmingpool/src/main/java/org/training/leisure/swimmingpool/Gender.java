@@ -15,6 +15,6 @@
  */
 package org.training.leisure.swimmingpool;
 
-public enum Gender {
+public enum Gender implements java.io.Serializable{
     male, female
 }

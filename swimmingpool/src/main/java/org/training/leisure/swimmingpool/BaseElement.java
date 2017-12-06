@@ -26,9 +26,9 @@ import java.util.List;
  * Time: 11:57
  * To change this template use File | Settings | File Templates.
  */
-public class BaseElement {
+public class BaseElement implements java.io.Serializable{
 
-    private List<CalculatedAttribute> calculatedAttributeList = new ArrayList<>();
+    private List<CalculatedAttribute> calculatedAttributeList = new ArrayList<CalculatedAttribute>();
 
     public BaseElement() {
     }

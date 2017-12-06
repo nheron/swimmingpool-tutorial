@@ -23,7 +23,7 @@ import java.math.BigDecimal;
  * Time: 11:52
  * To change this template use File | Settings | File Templates.
  */
-public class CalculatedAttribute {
+public class CalculatedAttribute implements java.io.Serializable{
     private String key;
     private String className;
     private boolean booleanValue;

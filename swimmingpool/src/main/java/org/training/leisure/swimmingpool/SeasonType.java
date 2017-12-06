@@ -16,6 +16,6 @@
 package org.training.leisure.swimmingpool;
 
 
-public enum SeasonType {
+public enum SeasonType implements java.io.Serializable{
     day, week, weekend, month, summer, winter, spring, autumn, fullYear
 }

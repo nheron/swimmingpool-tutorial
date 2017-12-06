@@ -20,7 +20,7 @@ import org.chtijbug.example.swimmingpool.PriceType;
 import java.math.BigDecimal;
 
 
-public class Price {
+public class Price implements java.io.Serializable{
     private BigDecimal amount;
     private String description;
     private PriceType priceType;
