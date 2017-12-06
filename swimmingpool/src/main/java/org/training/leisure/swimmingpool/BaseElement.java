@@ -15,7 +15,7 @@
  */
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.CalculatedAttribute;
+
 
 import java.util.ArrayList;
 import java.util.List;

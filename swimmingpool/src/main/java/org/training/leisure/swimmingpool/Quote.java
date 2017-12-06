@@ -15,12 +15,7 @@
  */
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.Address;
-import org.chtijbug.example.swimmingpool.BaseElement;
-import org.chtijbug.example.swimmingpool.Period;
-import org.chtijbug.example.swimmingpool.Person;
-import org.chtijbug.example.swimmingpool.Price;
-import org.chtijbug.example.swimmingpool.Subscription;
+
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;

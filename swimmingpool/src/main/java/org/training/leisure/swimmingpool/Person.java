@@ -1,8 +1,6 @@
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.BaseElement;
-import org.chtijbug.example.swimmingpool.Gender;
-import org.chtijbug.example.swimmingpool.Price;
+
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

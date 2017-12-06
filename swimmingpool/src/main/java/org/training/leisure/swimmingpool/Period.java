@@ -15,8 +15,7 @@
  */
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.BaseElement;
-import org.chtijbug.example.swimmingpool.SeasonType;
+
 
 import java.util.Date;
 

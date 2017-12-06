@@ -15,7 +15,7 @@
  */
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.BaseElement;
+
 
 /**
  * Created by IntelliJ IDEA.

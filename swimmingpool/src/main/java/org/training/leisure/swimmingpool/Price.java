@@ -15,7 +15,7 @@
  */
 package org.training.leisure.swimmingpool;
 
-import org.chtijbug.example.swimmingpool.PriceType;
+
 
 import java.math.BigDecimal;
 
