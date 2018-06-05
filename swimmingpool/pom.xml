@@ -2,8 +2,8 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.training.Leisure</groupId>
-  <artifactId>swimmingpool</artifactId>
+  <groupId>org.training.Leisure.group01</groupId>
+  <artifactId>swimmingpool-group01</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>swimmingpool</name>
