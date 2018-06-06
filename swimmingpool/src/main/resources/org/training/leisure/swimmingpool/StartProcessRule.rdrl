@@ -3,7 +3,9 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "StartProcessRule"
-	dialect "mvel"
+	dialect "java"
 	when
+		StartProcess( pId : processId != null )
 	then
+		kcontext.getKnowledgeRuntime().startProcess(pId);
 end
