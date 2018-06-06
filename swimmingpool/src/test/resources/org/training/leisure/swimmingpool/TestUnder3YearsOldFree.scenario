@@ -74,7 +74,7 @@
           <fieldName>age</fieldName>
           <expected>47.75</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>p1</name>
@@ -86,7 +86,7 @@
           <fieldName>age</fieldName>
           <expected>3.5</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>p2</name>
