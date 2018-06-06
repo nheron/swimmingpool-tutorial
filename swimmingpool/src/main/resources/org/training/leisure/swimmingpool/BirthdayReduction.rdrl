@@ -11,12 +11,12 @@ rule "BirthdayReduction"
 		not (pprice : Price( description == "BirthdayReduction" ) and Person( priceList contains pprice , this == pper )) 
 		Period( seasonType == SeasonType.day )
 	then
-		Price fact0 = new Price();
-		fact0.setDescription( "BirthdayReduction" );
-		fact0.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
-		fact0.setPriceType( PriceType.promotion );
-		insert( fact0 );
-		pper.addPrice(  );
+		Price nprice = new Price();
+		nprice.setDescription( "BirthdayReduction" );
+		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		nprice.setPriceType( PriceType.promotion );
+		insert( nprice );
+		pper.addPrice( nprice );
 		modify( pper ) {
 				setPriceList( pper.getPriceList() )
 		}
