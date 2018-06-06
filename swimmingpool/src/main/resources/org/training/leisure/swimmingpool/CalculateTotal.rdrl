@@ -9,7 +9,7 @@ rule "CalculateTotal"
 	when
 		not (Price( priceType == PriceType.definitive )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sp : standardPrice != null ),
-			init( BigDecimal res= new BigDecimal() ),
+			init( BigDecimal res= new BigDecimal("0.0") ),
 			action( res= res.add(sp) ),
 			reverse( res= res.substract(sp) ),
 			result( res )
