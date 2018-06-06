@@ -3,7 +3,20 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "CreateSubscription"
-	dialect "mvel"
+	dialect "java"
+	ruleflow-group "subscription"
 	when
+		not (Subscription( )) 
+		Price( priceType == PriceType.definitive , aa : amount != null )
+		Period( dstart : desidedStartDate != null )
+		qq : Quote( )
 	then
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd-MMM-yyyy");
+		Subscription ssub = new Subscription();
+		ssub.setValideFrom( dstart );
+		ssub.setPrice( aa );
+		insert( ssub );
+		modify( qq ) {
+				setSubscription( ssub )
+		}
 end
