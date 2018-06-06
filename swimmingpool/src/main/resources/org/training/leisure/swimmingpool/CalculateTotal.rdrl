@@ -16,8 +16,8 @@ rule "CalculateTotal"
 ) 
 		recuctValue : BigDecimal( ) from accumulate ( Price( aa : amount != null ),
 			init( BigDecimal res= new BigDecimal() ),
-			action( res= res.add(sp) ),
-			reverse( res= res.substract(sp) ),
+			action( res= res.add(aa) ),
+			reverse( res= res.substract(aa) ),
 			result( res )
 ) 
 	then
