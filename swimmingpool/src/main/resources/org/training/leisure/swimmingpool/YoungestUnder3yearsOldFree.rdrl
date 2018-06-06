@@ -6,10 +6,20 @@ import java.util.List;
 
 rule "YoungestUnder3yearsOldFree"
 	dialect "java"
+	ruleflow-group "promotion"
 	when
 		List( size() > 3 ) from collect ( Person( age >= 3.0 )) 
 		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
 			min(aage)) 
 		aPerson : Person( age == ( nn ) , Sprice : standardPrice != ( -1.0B ) )
 	then
+		Price aPrice = new Price();
+		aPrice.setDescription( "YoungestOver3YearsOldFree" );
+		aPrice.setPriceType( PriceType.promotion );
+		aPrice.setAmount( Sprice );
+		insert( aPrice );
+		CalculatedAttribute fact0 = new CalculatedAttribute();
+		fact0.setKey( "YoungestOver3YearsOldFree" );
+		fact0.setStringValue( "Person is free" );
+		insert( fact0 );
 end
