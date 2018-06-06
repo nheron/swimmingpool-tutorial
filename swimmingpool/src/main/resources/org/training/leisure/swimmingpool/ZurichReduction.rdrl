@@ -15,7 +15,7 @@ rule "ZurichReduction"
 		nprice.setAmount( 1 );
 		nprice.setPriceType( PriceType.promotion );
 		insert( nprice );
-		pper.addPrice( null );
+		pper.addPrice( nprice );
 		modify( pper ) {
 				setPriceList( pper.getPriceList() )
 		}
