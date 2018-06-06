@@ -21,9 +21,9 @@ rule "CalculateTotal"
 			result( res )
 ) 
 	then
-		Price fact0 = new Price();
-		fact0.setPriceType( PriceType.definitive );
-		fact0.setAmount( stdtPrice.subtract(reductValue) );
-		fact0.setDescription( "Final" );
-		insert( fact0 );
+		Price definitivePrice = new Price();
+		definitivePrice.setPriceType( PriceType.definitive );
+		definitivePrice.setAmount( stdtPrice.subtract(reductValue) );
+		definitivePrice.setDescription( "Final" );
+		insert( definitivePrice );
 end
