@@ -1,9 +1,15 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import java.lang.Number;
+import java.util.List;
 
 rule "YoungestUnder3yearsOldFree"
-	dialect "mvel"
+	dialect "java"
 	when
+		List( size() > 3 ) from collect ( Person( age >= 3.0 )) 
+		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
+			min(aage)) 
+		aPerson : Person( age == ( nn ) , Sprice : standardPrice != ( -1.0B ) )
 	then
 end
