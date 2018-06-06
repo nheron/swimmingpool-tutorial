@@ -3,7 +3,7 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "null"
-	dialect "mvel"
+	dialect "java"
 	ruleflow-group "init"
 	when
 		pp : Person( bdate : birthdate != null , age == ( -1.0 ) )
