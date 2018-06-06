@@ -66,23 +66,19 @@
     <execution-trace/>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
-      <expectedFire>false</expectedFire>
-    </expect-rule>
-    <expect-rule>
-      <ruleName>BirthdayReduction</ruleName>
       <expectedCount>1</expectedCount>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
-          <expected>48</expected>
+          <expected>47.75</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
-          <expected>12</expected>
+          <expected>25</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -94,13 +90,13 @@
       <fieldValues>
         <expect-field>
           <fieldName>amount</fieldName>
-          <expected>-1</expected>
+          <expected>-2</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
-          <expected>BirthdayReduction</expected>
+          <expected>ZurichReduction</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
