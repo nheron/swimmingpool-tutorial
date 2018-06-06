@@ -11,7 +11,7 @@ rule "CalculateTotal"
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sp : standardPrice != null ),
 			init( BigDecimal res= new BigDecimal("0.0") ),
 			action( res= res.add(sp) ),
-			reverse( res= res.substract(sp) ),
+			reverse( res= res.subtract(sp) ),
 			result( res )
 ) 
 		recuctValue : BigDecimal( ) from accumulate ( Price( aa : amount != null ),
