@@ -66,13 +66,13 @@
           <fieldName>age</fieldName>
           <expected>48</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>12</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>p1</name>
@@ -84,13 +84,13 @@
           <fieldName>amount</fieldName>
           <expected>-1</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
