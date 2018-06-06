@@ -3,7 +3,7 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "isPersonBirthday"
-	dialect "mvel"
+	dialect "java"
 	ruleflow-group "init"
 	when
 		pper : Person( bd : birthdate != null )
@@ -16,7 +16,7 @@ rule "isPersonBirthday"
 		insert( ica );
 		pper.getCalculatedAttributeList().add(ica);
 		modify( pper ) {
-				setAge( -1.0 ), 
+				setAge( -1.0d ), 
 				setCalculatedAttributeList( pper.getCalculatedAttributeList() )
 		}
 end
