@@ -4,10 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.training.Leisure.group01</groupId>
   <artifactId>swimmingpool-group01</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
   <name>swimmingpool</name>
-
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
@@ -17,12 +16,12 @@
     <repository>
       <id>my-sonatype-plus-releases</id>
       <name>sonatype-plus</name>
-      <url>http://oss.sonatype.org/content/repositories/releases/</url>             
+      <url>http://oss.sonatype.org/content/repositories/releases/</url>
     </repository>
     <repository>
       <id>my-sonatype-plus-snapshots</id>
       <name>sonatype-plus</name>
-      <url>http://oss.sonatype.org/content/repositories/snapshots/</url>              
+      <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
   </repositories>
   <build>
