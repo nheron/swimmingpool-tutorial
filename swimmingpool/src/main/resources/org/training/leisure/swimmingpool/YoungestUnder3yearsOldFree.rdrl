@@ -1,0 +1,9 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+
+rule "YoungestUnder3yearsOldFree"
+	dialect "mvel"
+	when
+	then
+end
