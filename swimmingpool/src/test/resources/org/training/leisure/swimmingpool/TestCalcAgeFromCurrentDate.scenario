@@ -30,12 +30,17 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>282</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
           <expected>30.5</expected>
+          <successResult>true</successResult>
+          <explanation>[p] field [age] was [30.5].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -44,6 +49,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2018-06-06 13:27:58.284 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
