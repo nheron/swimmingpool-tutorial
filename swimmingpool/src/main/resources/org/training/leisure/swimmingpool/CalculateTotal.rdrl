@@ -8,7 +8,7 @@ rule "CalculateTotal"
 	ruleflow-group "subscription"
 	when
 		not (Price( priceType == PriceType.definitive )) 
-		stdtPrice : BigDecimal( ) from accumulate ( Person( standardPrice != null ),
+		stdtPrice : BigDecimal( ) from accumulate ( Person( sp : standardPrice != null ),
 			init( BigDecimal res= new BigDecimal() ),
 			action( res= res.add(sp) ),
 			reverse( res= res.substract(sp) ),
