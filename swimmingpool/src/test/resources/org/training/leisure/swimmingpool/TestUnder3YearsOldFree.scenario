@@ -63,16 +63,49 @@
       <name>q</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <fact-data>
+      <type>StartProcess</type>
+      <fieldData>
+        <field-data>
+          <name>processId</name>
+          <value>swimmingpool.P000</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>sp</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>InsertPeriod</type>
+      <fieldData>
+        <field-data>
+          <name>enumValue</name>
+          <value>day</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>per</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace>
+      <executionTimeResult>174</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>YoungestUnder3yearsOldFree</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [YoungestUnder3yearsOldFree] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
           <expected>47.75</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [age] was [0.0] expected [47.75].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -85,6 +118,9 @@
         <expect-field>
           <fieldName>age</fieldName>
           <expected>3.5</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p2] field [age] was [0.0] expected [3.5].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -93,6 +129,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2018-06-06 13:35:58.930 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
