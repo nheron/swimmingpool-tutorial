@@ -1,9 +1,24 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import java.math.BigDecimal;
 
 rule "CalculateTotal"
-	dialect "mvel"
+	dialect "java"
+	ruleflow-group "final"
 	when
+		not (Price( priceType == PriceType.definitive )) 
+		stdtPrice : BigDecimal( ) from accumulate ( Person( standardPrice != null ),
+			init( BigDecimal res= new BigDecimal() ),
+			action( res= res.add(sp) ),
+			reverse( res= res.substract(sp) ),
+			result( res )
+) 
+		recuctValue : BigDecimal( ) from accumulate ( Price( aa : amount != null ),
+			init( BigDecimal res= new BigDecimal() ),
+			action( res= res.add(sp) ),
+			reverse( res= res.substract(sp) ),
+			result( res )
+) 
 	then
 end
