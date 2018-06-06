@@ -1,6 +1,7 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import java.util.Date;
 
 rule "isPersonBirthday"
 	dialect "java"
