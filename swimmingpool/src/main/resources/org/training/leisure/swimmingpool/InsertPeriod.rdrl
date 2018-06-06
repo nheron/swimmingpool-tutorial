@@ -1,9 +1,0 @@
-package org.training.leisure.swimmingpool;
-
-import java.lang.Number;
-
-rule "InsertPeriod"
-	dialect "mvel"
-	when
-	then
-end
