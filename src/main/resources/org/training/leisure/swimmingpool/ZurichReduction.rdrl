@@ -9,7 +9,7 @@ rule "ZurichReduction"
 	when
 		pper : Person( sprice : standardPrice > 0.0B , standardPrice != ( -1.0B ) )
 		not (pprice : Price( description == "ZurichReduction" ) and Person( this == pper , priceList contains pprice )) 
-		Address( cityName == "zurich" , cityName == "Zurich" , cityName == "Zürich" , cityName == "zürich" )
+		Address( cityName == "zurich" || cityName == "Zurich" || cityName == "Zürich" || cityName == "zürich" )
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "ZurichReduction" );
