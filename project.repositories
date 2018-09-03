@@ -91,6 +91,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>pymma-snapshot</id>
+        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot</url>
+        <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>maven-central</id>
         <url>http://central.maven.org/maven2/</url>
         <source>SETTINGS</source>
@@ -118,6 +126,14 @@
         <id>chtijbug-snapshot</id>
         <url>https://nexus.pymma-software.com/nexus//nexus/content/repositories/chtijbug-snapshot/</url>
         <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>pymma-release</id>
+        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
