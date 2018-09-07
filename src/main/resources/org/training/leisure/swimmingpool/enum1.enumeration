@@ -1,1 +1,2 @@
-'Period.seasonType' :  ['day','week','weekend','month','summer','winter','spring','autumn','fullYear']
+'Period.seasonType' : ['day','week','weekend','month','summer','winter','spring','autumn','fullYear']
+'Price.priceType' : ['definitive','promotion','reduction']
