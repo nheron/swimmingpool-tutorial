@@ -15,7 +15,7 @@ rule "YoungestUnder3yearsOldFree"
 	then
 		Price aPrice = new Price();
 		aPrice.setDescription( "YoungestOver3YearsOldFree" );
-		aPrice.setPriceType( PriceType.promotion );
+		aPrice.setPriceType( "promotion" );
 		aPrice.setAmount( Sprice );
 		insert( aPrice );
 		CalculatedAttribute fact0 = new CalculatedAttribute();

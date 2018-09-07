@@ -9,6 +9,11 @@
   <name>swimmingpool</name>
   <dependencies>
     <dependency>
+      <groupId>com.pymmasoftware.jbpm</groupId>
+      <artifactId>drools-framework-swimming-pool-model</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
       <version>7.10.0.Final</version>
