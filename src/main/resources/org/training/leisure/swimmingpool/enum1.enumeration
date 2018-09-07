@@ -1,2 +1,3 @@
 'Period.seasonType' : ['day','week','weekend','month','summer','winter','spring','autumn','fullYear']
 'Price.priceType' : ['definitive','promotion','reduction']
+'Person.gender' : ['male','female']
