@@ -15,40 +15,42 @@
  */
 package org.training.leisure.swimmingpool;
 
-
-
 import java.util.Date;
 
-
 public class Period extends BaseElement {
-    private Date desidedStartDate;
-    private SeasonType seasonType;
+	private Date desidedStartDate;
+	private String seasonType;
 
-    public Period() {
-    }
+	public Period() {
+	}
 
-    public Date getDesidedStartDate() {
-        return desidedStartDate;
-    }
+	public Date getDesidedStartDate() {
+		return desidedStartDate;
+	}
 
-    public void setDesidedStartDate(Date desidedStartDate) {
-        this.desidedStartDate = desidedStartDate;
-    }
+	public void setDesidedStartDate(Date desidedStartDate) {
+		this.desidedStartDate = desidedStartDate;
+	}
 
-    public SeasonType getSeasonType() {
-        return seasonType;
-    }
+	@Override
+	public String toString() {
+		final StringBuffer sb = new StringBuffer("Period{");
+		sb.append("desidedStartDate=").append(desidedStartDate);
+		sb.append(", seasonType=").append(seasonType);
+		sb.append('}');
+		return sb.toString();
+	}
 
-    public void setSeasonType(SeasonType seasonType) {
-        this.seasonType = seasonType;
-    }
+	public java.lang.String getSeasonType() {
+		return this.seasonType;
+	}
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Period{");
-        sb.append("desidedStartDate=").append(desidedStartDate);
-        sb.append(", seasonType=").append(seasonType);
-        sb.append('}');
-        return sb.toString();
-    }
+	public void setSeasonType(java.lang.String seasonType) {
+		this.seasonType = seasonType;
+	}
+
+	public Period(java.util.Date desidedStartDate, java.lang.String seasonType) {
+		this.desidedStartDate = desidedStartDate;
+		this.seasonType = seasonType;
+	}
 }
