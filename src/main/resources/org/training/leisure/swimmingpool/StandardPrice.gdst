@@ -115,7 +115,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>100</width>
+      <width>102</width>
       <header>amount</header>
       <boundName>p</boundName>
       <factField>standardPrice</factField>
@@ -240,7 +240,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>autumn</valueString>
+        <valueString>day</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -287,7 +287,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>autumn</valueString>
+        <valueString>day</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -334,7 +334,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>day</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -380,7 +380,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>day</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
