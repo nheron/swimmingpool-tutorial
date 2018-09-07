@@ -13,4 +13,5 @@ rule "CalPersonAge"
 						setAge( AgeCalculationYear(bdate,curDate) ), 
 						setStandardPrice( new BigDecimal("-1.0") )
 				}
+				System.out.println("pp modified");
 end
