@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>standardPrice</name>
-          <value>-1</value>
+          <value>-1B</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -50,7 +50,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2018-09-07 14:27:32.290 UTC</lastRunResult>
+  <lastRunResult>2018-09-07 14:27:44.767 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
