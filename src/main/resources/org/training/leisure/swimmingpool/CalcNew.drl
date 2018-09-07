@@ -2,7 +2,7 @@ package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
 
-rule "null"
+rule "CalPersonAge"
 	dialect "java"
 	ruleflow-group "init"
 	when
