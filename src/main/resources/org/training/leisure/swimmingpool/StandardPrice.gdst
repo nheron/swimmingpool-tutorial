@@ -2,11 +2,11 @@
   <tableName>StandardPrice</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols>
@@ -17,7 +17,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
@@ -36,7 +36,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>age&gt;=</header>
           <constraintValueType>1</constraintValueType>
           <factField>age</factField>
@@ -51,7 +51,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>age&lt;</header>
           <constraintValueType>1</constraintValueType>
           <factField>age</factField>
@@ -67,7 +67,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>true</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>DefaultValue</header>
           <constraintValueType>1</constraintValueType>
           <factField>standardPrice</factField>
@@ -93,11 +93,11 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>season</header>
           <constraintValueType>1</constraintValueType>
           <factField>seasonType</factField>
-          <fieldType>Comparable</fieldType>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
         </condition-column52>
@@ -115,7 +115,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>amount</header>
       <boundName>p</boundName>
       <factField>standardPrice</factField>
@@ -155,6 +155,7 @@
   </imports>
   <packageName>org.training.leisure.swimmingpool</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
   <data>
     <list>
       <value>
@@ -192,7 +193,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>day</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -239,7 +240,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.day</valueString>
+        <valueString>autumn</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -286,7 +287,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.day</valueString>
+        <valueString>autumn</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -333,7 +334,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.day</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -379,7 +380,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.day</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -426,7 +427,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.week</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -473,7 +474,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.week</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -520,7 +521,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.week</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -566,7 +567,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.week</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -613,7 +614,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.weekend</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -660,7 +661,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.weekend</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -707,7 +708,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.weekend</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -753,7 +754,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SeasonType.weekend</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
