@@ -44,33 +44,48 @@
       <fieldData>
         <field-data>
           <name>seasonType</name>
-          <value>SeasonType.day</value>
+          <value>day</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
       <name>per</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>1716</executionTimeResult>
+      <numberOfRulesFired>100000</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
+      <explanation>Rule [ZurichReduction] was not activated.</explanation>
       <expectedFire>false</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>BirthdayReduction</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [BirthdayReduction] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
           <expected>48</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [age] was [0.0] expected [48].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>12</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [standardPrice] was [] expected [12].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -83,12 +98,18 @@
         <expect-field>
           <fieldName>amount</fieldName>
           <expected>-1</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [amount] was [0.0] expected [-1].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
+          <actualResult>Final</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [description] was [Final] expected [BirthdayReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -102,7 +123,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-06-06 13:31:52.754 UTC</lastRunResult>
+  <lastRunResult>2018-09-07 09:35:12.366 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
