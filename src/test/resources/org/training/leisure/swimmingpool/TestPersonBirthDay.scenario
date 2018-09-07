@@ -30,12 +30,25 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>62</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>key</fieldName>
+          <expected>IsPersonBirthday</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [key] was [IsPersonBirthday].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -43,7 +56,15 @@
       <name>CalculatedAttribute</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>isPersonBirthday</ruleName>
+      <explanation>Rule [isPersonBirthday] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
+  <lastRunResult>2018-09-07 13:45:33.266 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
