@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>23-May-1968</value>
+          <value>07-Sep-2012</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -52,8 +52,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>102</executionTimeResult>
-      <numberOfRulesFired>5</numberOfRulesFired>
+      <executionTimeResult>110</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
@@ -74,18 +74,18 @@
         <expect-field>
           <fieldName>age</fieldName>
           <expected>48</expected>
-          <actualResult>0.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[p1] field [age] was [48].</explanation>
+          <actualResult>3.7105022831050225</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [age] was [3.7105022831050225] expected [48].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>12</expected>
-          <actualResult>-1.0</actualResult>
+          <actualResult>-1</actualResult>
           <successResult>false</successResult>
-          <explanation>[p1] field [standardPrice] was [-1.0] expected [12].</explanation>
+          <explanation>[p1] field [standardPrice] was [-1] expected [12].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -123,7 +123,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-09-07 14:16:00.341 UTC</lastRunResult>
+  <lastRunResult>2018-09-07 14:33:07.703 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
