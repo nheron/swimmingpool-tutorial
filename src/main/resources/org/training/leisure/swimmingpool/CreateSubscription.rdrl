@@ -7,7 +7,7 @@ rule "CreateSubscription"
 	ruleflow-group "subscription"
 	when
 		not (Subscription( )) 
-		Price( priceType == PriceType.definitive , aa : amount != null )
+		Price( priceType == "definitive" , aa : amount != null )
 		Period( dstart : desidedStartDate != null )
 		qq : Quote( )
 	then
