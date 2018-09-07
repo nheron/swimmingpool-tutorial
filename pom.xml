@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.pymmasoftware.jbpm.Leisure.group01</groupId>
   <artifactId>swimmingpool-group01</artifactId>
-  <version>1.0.8</version>
+  <version>1.0.9</version>
   <packaging>kjar</packaging>
   <name>swimmingpool</name>
   <dependencies>
