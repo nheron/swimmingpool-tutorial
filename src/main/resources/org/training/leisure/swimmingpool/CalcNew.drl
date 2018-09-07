@@ -3,7 +3,7 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "CalPersonAge"
-	dialect "java"
+	dialect "mvel"
 	ruleflow-group "init"
 	when
 		pp : Person( bdate : birthdate != null , age == ( -1.0 ) )
@@ -11,6 +11,6 @@ rule "CalPersonAge"
 	then
 		modify( pp ) {
 						setAge( AgeCalculationYear(bdate,curDate) ), 
-						setStandardPrice( new BigDecimal("-1.0") )
+						setStandardPrice( -1.0 )
 				}
 end
