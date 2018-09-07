@@ -44,7 +44,7 @@
       <fieldData>
         <field-data>
           <name>seasonType</name>
-          <value>SeasonType.day</value>
+          <value>day</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -64,8 +64,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>115</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
@@ -79,18 +79,18 @@
         <expect-field>
           <fieldName>age</fieldName>
           <expected>47.75</expected>
-          <actualResult>0.0</actualResult>
+          <actualResult>48.0</actualResult>
           <successResult>false</successResult>
-          <explanation>[p1] field [age] was [0.0] expected [47.75].</explanation>
+          <explanation>[p1] field [age] was [48.0] expected [47.75].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>25</expected>
-          <actualResult></actualResult>
+          <actualResult>-1.0</actualResult>
           <successResult>false</successResult>
-          <explanation>[p1] field [standardPrice] was [] expected [25].</explanation>
+          <explanation>[p1] field [standardPrice] was [-1.0] expected [25].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -103,18 +103,18 @@
         <expect-field>
           <fieldName>amount</fieldName>
           <expected>-2</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>0.0</actualResult>
           <successResult>false</successResult>
-          <explanation>Fact of type [Price] was not found in the results.</explanation>
+          <explanation>[Price] field [amount] was [0.0] expected [-2].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
           <expected>ZurichReduction</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>Final</actualResult>
           <successResult>false</successResult>
-          <explanation>Fact of type [Price] was not found in the results.</explanation>
+          <explanation>[Price] field [description] was [Final] expected [ZurichReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -128,7 +128,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-06-06 13:28:31.635 UTC</lastRunResult>
+  <lastRunResult>2018-09-07 09:47:03.418 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
