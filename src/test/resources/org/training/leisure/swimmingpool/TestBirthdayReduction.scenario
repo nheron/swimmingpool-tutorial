@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>273</executionTimeResult>
+      <executionTimeResult>76</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -118,7 +118,16 @@
       <anonymous>true</anonymous>
     </expect-fact>
     <expect-fact>
-      <fieldValues/>
+      <fieldValues>
+        <expect-field>
+          <fieldName>seasonType</fieldName>
+          <expected>day</expected>
+          <successResult>true</successResult>
+          <explanation>[Period] field [seasonType] was [day].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
       <name>Period</name>
       <anonymous>true</anonymous>
     </expect-fact>
@@ -129,8 +138,31 @@
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>key</fieldName>
+          <expected>IsPersonBirthday</expected>
+          <actualResult>IsPersonBirthday</actualResult>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [key] was [IsPersonBirthday].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>stringValue</fieldName>
+          <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>CalculatedAttribute</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2018-09-13 19:48:54.581 UTC</lastRunResult>
+  <lastRunResult>2018-09-13 20:17:20.840 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
