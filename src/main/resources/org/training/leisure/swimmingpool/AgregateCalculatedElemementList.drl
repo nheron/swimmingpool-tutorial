@@ -1,2 +1,17 @@
 package org.training.leisure.swimmingpool;
 
+import org.training.leisure.swimmingpool.CalculatedAttribute;
+import org.training.leisure.swimmingpool.BaseElement;
+
+rule "AggregateCalculatedElementList"
+
+when
+    $c : CalculatedAttribute( $f : father)
+   not ( BaseElement(this ==$f,calculatedAttributeList  contains $c))
+    $be : BaseElement(this ==$f)
+then
+    $be.getCalculatedAttributeList().add($c);
+    update($be);
+end
+    
+
