@@ -52,8 +52,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>107</executionTimeResult>
-      <numberOfRulesFired>4</numberOfRulesFired>
+      <executionTimeResult>273</executionTimeResult>
+      <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
@@ -83,9 +83,9 @@
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>12</expected>
-          <actualResult>-1.0</actualResult>
+          <actualResult>0.0</actualResult>
           <successResult>false</successResult>
-          <explanation>[p1] field [standardPrice] was [-1.0] expected [12].</explanation>
+          <explanation>[p1] field [standardPrice] was [0.0] expected [12].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -130,7 +130,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2018-09-07 13:52:08.851 UTC</lastRunResult>
+  <lastRunResult>2018-09-13 19:48:54.581 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
