@@ -31,8 +31,8 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>282</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>49</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -49,7 +49,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-06-06 13:27:58.284 UTC</lastRunResult>
+  <lastRunResult>2018-09-13 19:52:24.67 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
