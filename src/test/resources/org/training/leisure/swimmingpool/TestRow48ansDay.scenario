@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>07-Sep-2012</value>
+          <value>23-May-1968</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>110</executionTimeResult>
+      <executionTimeResult>73</executionTimeResult>
       <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -74,18 +74,18 @@
         <expect-field>
           <fieldName>age</fieldName>
           <expected>48</expected>
-          <actualResult>3.7105022831050225</actualResult>
-          <successResult>false</successResult>
-          <explanation>[p1] field [age] was [3.7105022831050225] expected [48].</explanation>
+          <actualResult>44.0</actualResult>
+          <successResult>true</successResult>
+          <explanation>[p1] field [age] was [48].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>12</expected>
-          <actualResult>-1</actualResult>
+          <actualResult>0.0</actualResult>
           <successResult>false</successResult>
-          <explanation>[p1] field [standardPrice] was [-1] expected [12].</explanation>
+          <explanation>[p1] field [standardPrice] was [0.0] expected [12].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -113,6 +113,15 @@
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
+        <expect-field>
+          <fieldName>priceType</fieldName>
+          <expected>promotion</expected>
+          <actualResult>definitive</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [priceType] was [definitive] expected [promotion].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
       </fieldValues>
       <name>Price</name>
       <anonymous>true</anonymous>
@@ -122,8 +131,31 @@
       <name>Period</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>key</fieldName>
+          <expected>IsPersonBirthday</expected>
+          <actualResult>IsPersonBirthday</actualResult>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [key] was [IsPersonBirthday].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>stringValue</fieldName>
+          <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>CalculatedAttribute</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2018-09-07 14:33:07.703 UTC</lastRunResult>
+  <lastRunResult>2018-09-13 16:32:51.451 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
