@@ -66,13 +66,13 @@
             <dataType>NUMERIC_BIGDECIMAL</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>true</hideColumn>
+          <hideColumn>false</hideColumn>
           <width>100</width>
           <header>DefaultValue</header>
           <constraintValueType>1</constraintValueType>
           <factField>standardPrice</factField>
           <fieldType>BigDecimal</fieldType>
-          <operator>==</operator>
+          <operator>== null</operator>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -187,9 +187,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -234,9 +233,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -281,9 +279,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -328,9 +325,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -374,9 +370,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -421,9 +416,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -468,9 +462,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -515,9 +508,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -561,9 +553,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -608,9 +599,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -655,9 +645,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -702,9 +691,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -748,9 +736,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>-1.0</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
