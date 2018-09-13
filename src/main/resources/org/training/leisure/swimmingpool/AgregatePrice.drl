@@ -1,16 +1,16 @@
 package org.training.leisure.swimmingpool;
 
-import org.training.leisure.swimmingpool.CalculatedAttribute;
-import org.training.leisure.swimmingpool.BaseElement;
+import org.training.leisure.swimmingpool.Price;
+import org.training.leisure.swimmingpool.Person;
 
-rule "AggregateCalculatedElementList"
+rule "AggregatePriceElementList"
 
 when
-    $c : CalculatedAttribute( $f : father)
-   not ( BaseElement(this ==$f,calculatedAttributeList  contains $c))
-    $be : BaseElement(this ==$f)
+    $c : Price( $f : person)
+   not ( Person(this ==$f,priceList  contains $c))
+    $be : Person(this ==$f)
 then
-    $be.getCalculatedAttributeList().add($c);
+    $be.getPriceList().add($c);
     update($be);
 end
     
