@@ -17,7 +17,7 @@ rule "isPersonBirthday"
 		insert( ica );
 		pper.getCalculatedAttributeList().add(ica);
 		modify( pper ) {
-				setAge( -1.0d ), 
+				setAge( AgeCalculationYear(bd,qd) ), 
 				setCalculatedAttributeList( pper.getCalculatedAttributeList() )
 		}
 end
