@@ -14,10 +14,7 @@ rule "ZurichReduction"
 		Price nprice = new Price();
 		nprice.setDescription( "ZurichReduction" );
 		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
-		nprice.setPriceType( "promotion");
+		nprice.setPriceType( "promotion" );
+		nprice.setPerson( pper );
 		insert( nprice );
-		pper.addPrice( nprice );
-		modify( pper ) {
-				setPriceList( pper.getPriceList() )
-		}
 end
