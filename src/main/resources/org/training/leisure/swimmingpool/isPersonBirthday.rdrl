@@ -16,9 +16,7 @@ rule "isPersonBirthday"
 		ica.setStringValue( new Boolean(isBirthday(bd,qd)).toString() );
 		ica.setFather( pper );
 		insert( ica );
-		pper.getCalculatedAttributeList().add(ica);
 		modify( pper ) {
-				setAge( AgeCalculationYear(bd,qd) ), 
-				setCalculatedAttributeList( pper.getCalculatedAttributeList() )
+				setAge( AgeCalculationYear(bd,qd) )
 		}
 end
