@@ -8,19 +8,19 @@ rule "YoungestUnder3yearsOldFree"
 	dialect "mvel"
 	when
 		List( size() > 3 ) from collect ( Person( age >= 3.0 )) 
-				nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
-					min(aage)) 
-				aPerson : Person( age == ( nn ) , Sprice : standardPrice != null  )
+		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
+			min(aage)) 
+		aPerson : Person( age == ( nn ) , Sprice : standardPrice != null )
 	then
 		Price aPrice = new Price();
-				aPrice.setDescription( "YoungestOver3YearsOldFree" );
-				aPrice.setPriceType( "promotion" );
-				aPrice.setAmount( Sprice );
-		               aPrice.SetPerson(aPerson);
-				insert( aPrice );
-				CalculatedAttribute fact0 = new CalculatedAttribute();
-				fact0.setKey( "YoungestOver3YearsOldFree" );
-				fact0.setStringValue( "Person is free" );
-		                fact0.setFather(aPerson);
-				insert( fact0 );
+		aPrice.setDescription( "YoungestOver3YearsOldFree" );
+		aPrice.setPriceType( "promotion" );
+		aPrice.setAmount( Sprice );
+		aPrice.setPerson( aPerson );
+		insert( aPrice );
+		CalculatedAttribute fact0 = new CalculatedAttribute();
+		fact0.setKey( "YoungestOver3YearsOldFree" );
+		fact0.setStringValue( "Person is free" );
+		fact0.setFather( aPerson );
+		insert( fact0 );
 end
