@@ -6,9 +6,9 @@ rule "BirthdayReduction"
 	dialect "java"
 	ruleflow-group "reduction"
 	when
-		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" )
-		pper : Person( calculatedAttributeList contains ccat , sprice : standardPrice != null )
-		not (pprice : Price( description == "BirthdayReduction" , person == pper )) 
+		pper : Person( sprice : standardPrice != null )
+		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" , father == pper )
+		not (pprice : Price( description == "BirthdayReduction" , person == pper , person == pper )) 
 		Period( seasonType == "day" )
 	then
 		Price nprice = new Price();
