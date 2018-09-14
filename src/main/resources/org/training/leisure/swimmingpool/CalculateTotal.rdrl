@@ -20,10 +20,12 @@ rule "CalculateTotal"
 			reverse( res = res.subtract(aa); ),
 			result( res )
 ) 
+		qq : Quote( )
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( "definitive" );
 		definitivePrice.setAmount( stdtPrice.subtract(reductValue) );
 		definitivePrice.setDescription( "Final" );
+		definitivePrice.setQuote( qq );
 		insert( definitivePrice );
 end
