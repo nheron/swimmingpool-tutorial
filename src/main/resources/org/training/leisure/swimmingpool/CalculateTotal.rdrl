@@ -7,7 +7,8 @@ rule "CalculateTotal"
 	dialect "java"
 	ruleflow-group "subscription"
 	when
-		not (Price( priceType == "definitive" )) 
+		qq : Quote( )
+		not (Price( priceType == "definitive" , quote == qq )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sp : standardPrice != null ),
 			init( BigDecimal res = new BigDecimal("0.0"); ),
 			action( res = res.add(sp); ),
@@ -20,7 +21,6 @@ rule "CalculateTotal"
 			reverse( res = res.subtract(aa); ),
 			result( res )
 ) 
-		qq : Quote( )
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( "definitive" );
