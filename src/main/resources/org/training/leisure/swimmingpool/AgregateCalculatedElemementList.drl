@@ -7,7 +7,7 @@ rule "AggregateCalculatedElementList"
 
 when
     $c : CalculatedAttribute( $f : father)
-   not ( BaseElement(this ==$f,calculatedAttributeList  contains $c))
+   not ( Person(this ==$f,calculatedAttributeList  contains $c))
     $be : Person(this ==$f)
 then
     $be.getCalculatedAttributeList().add($c);
