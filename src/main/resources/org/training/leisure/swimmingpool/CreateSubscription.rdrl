@@ -7,9 +7,9 @@ rule "CreateSubscription"
 	ruleflow-group "subscription"
 	when
 		not (Subscription( )) 
-		Price( priceType == "definitive" , aa : amount != null )
-		Period( dstart : desidedStartDate != null )
 		qq : Quote( )
+		Price( priceType == "definitive" , aa : amount != null , quote == qq )
+		Period( dstart : desidedStartDate != null )
 	then
 		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd-MMM-yyyy");
 		Subscription ssub = new Subscription();
