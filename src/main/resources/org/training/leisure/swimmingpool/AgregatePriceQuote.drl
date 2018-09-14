@@ -1,0 +1,17 @@
+package org.training.leisure.swimmingpool;
+
+import org.training.leisure.swimmingpool.Price;
+import org.training.leisure.swimmingpool.Person;
+
+rule "AggregatePriceElementList"
+
+when
+    $c : Price( $f : person)
+   not ( Person(this ==$f,priceList  contains $c))
+    $be : Person(this ==$f)
+then
+    $be.getPriceList().add($c);
+    update($be);
+end
+    
+
