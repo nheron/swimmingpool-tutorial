@@ -1,14 +1,14 @@
 package org.training.leisure.swimmingpool;
 
 import org.training.leisure.swimmingpool.Price;
-import org.training.leisure.swimmingpool.Person;
+import org.training.leisure.swimmingpool.Quote;
 
-rule "AggregatePriceElementList"
+rule "AggregateQuoteElementList"
 
 when
-    $c : Price( $f : person)
-   not ( Person(this ==$f,priceList  contains $c))
-    $be : Person(this ==$f)
+    $c : Price( $f : quote)
+   not ( Quote(this ==$f,priceList  contains $c))
+    $be : Quote(this ==$f)
 then
     $be.getPriceList().add($c);
     update($be);
