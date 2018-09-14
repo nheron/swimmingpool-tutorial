@@ -8,7 +8,7 @@ rule "BirthdayReduction"
 	when
 		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" )
 		pper : Person( calculatedAttributeList contains ccat , sprice : standardPrice != null )
-		not (pprice : Price( description == "BirthdayReduction" ) and Person( priceList contains pprice , this == pper )) 
+		not (pprice : Price( description == "BirthdayReduction" , person == pper )) 
 		Period( seasonType == "day" )
 	then
 		Price nprice = new Price();
