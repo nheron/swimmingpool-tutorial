@@ -12,6 +12,12 @@
       <groupId>com.pymmasoftware.jbpm</groupId>
       <artifactId>drools-framework-swimming-pool-model</artifactId>
       <version>1.0-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
