@@ -6,7 +6,7 @@ rule "NicoRules"
 	dialect "java"
 	ruleflow-group "reduction"
 	when
-		pper : Person( sprice : standardPrice != null )
+		pper : Person( sprice : standardPrice == null )
 		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" , father == pper )
 		not (pprice : Price( description == "BirthdayReduction" , person == pper )) 
 		Period( seasonType == "day" )
