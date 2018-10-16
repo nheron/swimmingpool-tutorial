@@ -12,7 +12,6 @@ rule "NicoRules"
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "BirthdayReduction" );
-		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
 		nprice.setPriceType( "promotion" );
 		nprice.setPerson( pper );
 		insert( nprice );
