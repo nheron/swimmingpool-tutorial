@@ -52,8 +52,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>99</executionTimeResult>
-      <numberOfRulesFired>6</numberOfRulesFired>
+      <executionTimeResult>367</executionTimeResult>
+      <numberOfRulesFired>8</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
@@ -163,10 +163,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>NicoRules</ruleName>
+      <explanation>Rule [NicoRules] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2018-10-16 09:54:09.594 UTC</lastRunResult>
+  <lastRunResult>2018-10-16 09:56:16.518 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
