@@ -6,7 +6,7 @@ rule "NicoRules"
 	dialect "java"
 	ruleflow-group "reduction"
 	when
-		pper : Person( sprice : standardPrice != null )
+		pper : Person( )
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "BirthdayReduction" );
