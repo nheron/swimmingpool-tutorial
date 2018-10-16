@@ -28,8 +28,8 @@
       <include>true</include>
       <metadata>
         <id>pymma-snapshot</id>
-        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot</url>
-        <source>PROJECT</source>
+        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
@@ -83,25 +83,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>chtijbug-release</id>
-        <url>https://nexus.pymma-software.com/nexus/content/repositories/chtijbug-release/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>chtijbug-snapshot</id>
-        <url>https://nexus.pymma-software.com/nexus//nexus/content/repositories/chtijbug-snapshot/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>my-sonatype-plus-snapshots</id>
         <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
         <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>pymma-release</id>
+        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
@@ -126,14 +118,6 @@
         <id>local</id>
         <url>/Users/nheron/m2_kiewb</url>
         <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>pymma-release</id>
-        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release</url>
-        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
