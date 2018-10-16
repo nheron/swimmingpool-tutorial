@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>103</executionTimeResult>
+      <executionTimeResult>99</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -163,13 +163,10 @@
     </expect-fact>
     <expect-rule>
       <ruleName>NicoRules</ruleName>
-      <explanation>Rule [NicoRules] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2018-10-16 09:52:41.578 UTC</lastRunResult>
+  <lastRunResult>2018-10-16 09:54:09.594 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
