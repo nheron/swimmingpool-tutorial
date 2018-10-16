@@ -7,7 +7,6 @@ rule "NicoRules"
 	ruleflow-group "reduction"
 	when
 		pper : Person( sprice : standardPrice != null )
-		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" , father == pper )
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "BirthdayReduction" );
