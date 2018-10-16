@@ -8,7 +8,6 @@ rule "NicoRules"
 	when
 		pper : Person( sprice : standardPrice != null )
 		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" , father == pper )
-		Period( seasonType == "day" )
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "BirthdayReduction" );
