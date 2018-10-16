@@ -1,0 +1,20 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+
+rule "NicoRules"
+	dialect "java"
+	ruleflow-group "reduction"
+	when
+		pper : Person( sprice : standardPrice != null )
+		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" , father == pper )
+		not (pprice : Price( description == "BirthdayReduction" , person == pper )) 
+		Period( seasonType == "day" )
+	then
+		Price nprice = new Price();
+		nprice.setDescription( "BirthdayReduction" );
+		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		nprice.setPriceType( "promotion" );
+		nprice.setPerson( pper );
+		insert( nprice );
+end
