@@ -9,7 +9,7 @@
         <field-data>
           <name>birthdate</name>
           <value>23-May-1968</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>p1</name>
@@ -21,7 +21,7 @@
         <field-data>
           <name>quoteDate</name>
           <value>23-May-2016</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>q</name>
