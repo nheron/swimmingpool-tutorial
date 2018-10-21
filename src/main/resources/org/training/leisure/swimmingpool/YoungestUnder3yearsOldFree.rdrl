@@ -6,6 +6,7 @@ import java.util.List;
 
 rule "YoungestUnder3yearsOldFree"
 	dialect "mvel"
+	ruleflow-group "promotion"
 	when
 		List( size() > 3 ) from collect ( Person( age >= 3.0 )) 
 		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
