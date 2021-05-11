@@ -3,72 +3,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <id>pymma-release</id>
+        <url>https://nexus.pymma-software.net/repository/pymma-release/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>my-sonatype-plus-releases</id>
-        <url>http://oss.sonatype.org/content/repositories/releases/</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>kie-staging-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>sonatype-plus-snapshots</id>
-        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/Users/nheron/m2_kiewb</url>
-        <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>origin-repository.jboss.org</id>
-        <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-origin-repository-group</id>
-        <url>https://origin-repository.jboss.org/nexus/content/groups/ea/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>chtijbug-release</id>
-        <url>http://nexus.pymma-software.com/nexus/content/repositories/chtijbug-release/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>maven-central</id>
-        <url>http://central.maven.org/maven2/</url>
+        <id>Pymma-opensource</id>
+        <url>https://nexus.pymma-software.net/repository/opensource-maven</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -76,24 +20,16 @@
       <include>true</include>
       <metadata>
         <id>pymma-snapshot</id>
-        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot/</url>
+        <url>https://nexus.pymma-software.net/repository/pymma-snapshot/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>sonatype-plus-releases</id>
-        <url>http://oss.sonatype.org/content/repositories/releases/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>my-sonatype-plus-snapshots</id>
-        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
-        <source>PROJECT</source>
+        <id>local</id>
+        <url>/Users/nheron/m2_kiewb_localRepo/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -102,70 +38,6 @@
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>projectodd-snapshots</id>
-        <url>https://repository-projectodd.forge.cloudbees.com/snapshot</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>origin-repository.jboss.org</id>
-        <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-developer-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/developer/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>chtijbug-snapshot</id>
-        <url>http://nexus.pymma-software.com/nexus/content/repositories/chtijbug-snapshot/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jskywayperspectives</id>
-        <url>http://downloads.skywayperspectives.org/maven-repo/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://localhost:8080/kie-wb/maven2/</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>pymma-release</id>
-        <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release/</url>
-        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
