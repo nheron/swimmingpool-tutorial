@@ -11,14 +11,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>Pymma-opensource</id>
-        <url>https://nexus.pymma-software.net/repository/opensource-maven</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>pymma-snapshot</id>
         <url>https://nexus.pymma-software.net/repository/pymma-snapshot/</url>
         <source>SETTINGS</source>
@@ -30,6 +22,14 @@
         <id>local</id>
         <url>/Users/nheron/m2_kiewb_localRepo/repository</url>
         <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>Pymma-opensource</id>
+        <url>https://nexus.pymma-software.net/repository/opensource-maven</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
